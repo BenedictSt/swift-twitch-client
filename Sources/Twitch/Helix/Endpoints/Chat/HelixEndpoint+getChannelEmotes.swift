@@ -59,16 +59,16 @@ public struct ChannelEmote: Decodable {
 }
 
 public enum Emote {
-  enum Format: String, Decodable {
+  public enum Format: String, Decodable {
     case gif = "animated"
     case png = "static"
   }
 
-  enum Scale: String, Decodable {
+  public enum Scale: String, Decodable {
     case small = "1.0"
     case medium = "2.0"
     case large = "3.0"
   }
 
-  enum ThemeMode: String, Decodable { case light, dark }
+  public enum ThemeMode: String, Decodable { case light, dark }
 }
